@@ -23,8 +23,11 @@ const exercise2 = {
   tip: document.getElementsByClassName(".tip-text"),
   score: 0
 };
-
 const nextBtn = document.querySelector('.next');
 const score1 = document.querySelector('.score1');
-// FUNCTIONS
 
+// FUNCTIONS
+// EVENT LISTENERS
+nextBtn.addEventListener('click', ()=> {
+  console.log('test');
+})
