@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <!-- <link rel="icon" type="image/x-icon" href="/favicon.svg" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap"
       rel="stylesheet"
@@ -24,12 +25,18 @@
     <!-- MAIN SECTION -->
     <main>
         <!-- JOCKEY WRAPPER -->
-      <section class="jockey-wrapper flex">
+      <section class="jockey-wrapper flex-column">
         <div class="copy">
           <h1 class="exercise-title">Front Plank</h1>
         </div>
         <div class="image">
-          <img class="exercice-img" src="1.jpg" alt="" />
+          <img id="exercice-img" src="1.jpg" alt="" />
+        </div>
+        <div class="copy">
+          <p class="tip">
+            <span>TIP:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            voluptatem.
+          </p>
         </div>
         <div class="functionality">
           <button class="score1">
@@ -45,23 +52,32 @@
             <span class="score-3-span">0s - 120s</span>
           </button>
         </div>
-        <div class="tip">
+        <!-- <div class="tip">
           <p class="tip-text">
             TIP: Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
             voluptatem.
           </p>
-        </div>
+        </div> -->
         <div class="score">
-          <h3>SCORE: <span></span></h3>
+          <h3>SCORE: <span class="score-value"></span></h3>
         </div>
       </section>
 
       <!-- SLIDE NAVIGATION -->
       <section class="slide-navigation">
+        <div class="flex-row">
+
           <button class="next">Next</button>
+        </div>
       </section>
     </main>
 
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-wrapper">
+        
+      </div>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>

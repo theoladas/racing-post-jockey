@@ -18,6 +18,7 @@ h1 {
   font-size: 3rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 2px 2px rgba(0, 0, 0, 0.5);
   color: #d11f25;
 }
 
@@ -34,17 +35,23 @@ p {
   color: black;
 }
 
-.flex {
+.flex-column {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+}
+
 img {
   max-width: 100%;
   display: block;
   border-radius: 5px;
+  border: none;
 }
 img.jockey-img {
   margin: 0 auto;
@@ -86,22 +93,13 @@ header nav #logo {
   position: relative;
   padding-top: 5em;
 }
-.jockey-wrapper .graph-img {
-  opacity: 0.6;
-  position: absolute;
-  top: 10%;
-  left: 70%;
-}
-.jockey-wrapper .graph2-img {
-  opacity: 0.7;
-  position: absolute;
-  top: 70%;
-  right: 70%;
-}
 .jockey-wrapper .functionality,
 .jockey-wrapper .tip,
 .jockey-wrapper .score {
   padding-top: 1rem;
+}
+.jockey-wrapper .tip {
+  font-weight: 300;
 }
 .jockey-wrapper .functionality button {
   margin-left: 0.5rem;
@@ -110,9 +108,11 @@ header nav #logo {
 .slide-navigation {
   width: 80%;
 }
+.slide-navigation .tip-text {
+  width: 350px;
+}
 .slide-navigation .next {
   display: block;
-  margin-left: auto;
   background-color: #ea212e;
   color: #fff;
   cursor: pointer;
