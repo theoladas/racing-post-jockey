@@ -53,9 +53,6 @@ img {
   border-radius: 5px;
   border: none;
 }
-img.jockey-img {
-  margin: 0 auto;
-}
 
 a,
 button {
@@ -80,9 +77,15 @@ header {
   border-bottom: 2px solid #d11f25;
 }
 header nav {
-  padding: 3rem;
+  padding: 24px;
   display: flex;
   justify-content: space-between;
+}
+header nav .logo-link {
+  border: none;
+}
+header nav .logo-link:hover {
+  background-color: transparent;
 }
 header nav #logo {
   width: 150px;
@@ -91,12 +94,16 @@ header nav #logo {
 
 .jockey-wrapper {
   position: relative;
-  padding-top: 5em;
+  padding-top: 62px;
 }
 .jockey-wrapper .functionality,
 .jockey-wrapper .tip,
 .jockey-wrapper .score {
   padding-top: 1rem;
+}
+.jockey-wrapper .image .exercice-img {
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .jockey-wrapper .tip {
   font-weight: 300;
@@ -104,15 +111,24 @@ header nav #logo {
 .jockey-wrapper .functionality button {
   margin-left: 0.5rem;
 }
+.jockey-wrapper .functionality button h2 {
+  color: black;
+  margin-bottom: 0.4rem;
+}
+.jockey-wrapper .functionality button span {
+  font-size: 16px;
+}
+.jockey-wrapper .score span {
+  color: #d11f25;
+}
 
 .slide-navigation {
   width: 80%;
-}
-.slide-navigation .tip-text {
-  width: 350px;
+  padding-bottom: 48px;
 }
 .slide-navigation .next {
   display: block;
+  margin-left: auto;
   background-color: #ea212e;
   color: #fff;
   cursor: pointer;
@@ -121,4 +137,33 @@ header nav #logo {
 .slide-navigation .next:hover {
   background-color: white;
   color: #ea212e;
+}
+
+footer {
+  background-color: #cdcccb;
+  padding: 48px;
+}
+footer .footer-wrapper img {
+  width: 150px;
+  object-fit: contain;
+}
+footer .footer-wrapper ul li {
+  list-style: none;
+  margin-right: 10px;
+  transition: all 0.4s ease;
+}
+footer .footer-wrapper ul li:hover {
+  transform: translateY(-5px);
+}
+footer .footer-wrapper ul li a {
+  border: none;
+  background-color: transparent;
+}
+footer .footer-wrapper ul li a img {
+  width: 35px;
+}
+footer .footer-wrapper .copy p {
+  font-size: 14px;
+  text-align: center;
+  line-height: 35px;
 }/*# sourceMappingURL=style.css.map */

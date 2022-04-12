@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="icon" type="image/x-icon" href="/favicon.svg" /> -->
+    <link rel="icon" type="image/x-icon" href="/favicon.svg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap"
@@ -15,12 +15,12 @@
   </head>
   <body>
     <!-- HEADER / NAV -->
-    <!-- <header>
+    <header>
       <nav>
-        <img id="logo" src="logo.png" alt="Racing Post logo" />
-        <a href="https://www.racingpost.com/" target="_blank">Contact</a>
+        <a class="logo-link" href="https://www.racingpost.com/" target="_blank"><img id="logo" src="logo.png" alt="Racing Post logo" /></a>
+        <a href="https://help.racingpost.com/hc/en-us/requests/new" target="_blank">Contact</a>
       </nav>
-    </header> -->
+    </header>
 
     <!-- MAIN SECTION -->
     <main>
@@ -30,52 +30,59 @@
           <h1 class="exercise-title">Front Plank</h1>
         </div>
         <div class="image">
-          <img id="exercice-img" src="1.jpg" alt="" />
+          <img id="exercice-img" src="/img/1image-front-plank.jpg" alt="" />
         </div>
         <div class="copy">
           <p class="tip">
-            <span>TIP:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-            voluptatem.
-          </p>
+            <span>TIP:</span> Engage your core and make sure you stay in a straight line</p>
         </div>
         <div class="functionality">
           <button class="score1">
-            <h2 class="score-1-title">SCORE 1</h3>
-            <span class="score-1-span">0s - 120s</span>
+            <h2 class="point-1">1 Point</h3>
+            <span class="point-1-span">0-120 secs</span>
           </button>
           <button>
-            <h2 class="score-2-title">SCORE 2</h2>
-            <span class="score-2-span">0s - 120s</span>
+            <h2 class="point-2">2 Points</h2>
+            <span class="point-2-span">121-210 secs</span>
           </button>
           <button>
-            <h2 class="score-3-title">SCORE 3</h2>
-            <span class="score-3-span">0s - 120s</span>
+            <h2 class="point-3">3 Points</h2>
+            <span class="point-3-span">211+ secs</span>
           </button>
         </div>
-        <!-- <div class="tip">
-          <p class="tip-text">
-            TIP: Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-            voluptatem.
-          </p>
-        </div> -->
         <div class="score">
-          <h3>SCORE: <span class="score-value"></span></h3>
+          <h3>SCORE: <span class="score-value">0</span></h3>
         </div>
       </section>
 
       <!-- SLIDE NAVIGATION -->
       <section class="slide-navigation">
-        <div class="flex-row">
-
-          <button class="next">Next</button>
-        </div>
+        <button class="next">Next</button>
       </section>
     </main>
 
     <!-- FOOTER -->
     <footer>
-      <div class="footer-wrapper">
-        
+      <div class="footer-wrapper flex-column">
+        <img src="/logo.png" alt="Racing Post logo">
+        <ul class="social flex-row">
+          <li><a href="https://www.instagram.com/racingpost/"><img src="/icons/instagram.svg" alt="Instagram logo"></a></li>
+          <li><a href="https://twitter.com/racingpost"><img src="/icons/twitter.svg" alt="Twitter logo"></a></li>
+          <li><a href="https://www.youtube.com/user/racingpostdotcom"><img src="/icons/youtube.svg" alt="Youtube logo"></a></li>
+          <li><a href="https://open.spotify.com/show/2u42zu7lk0seljo2zBRpti"><img src="/icons/spotify.svg" alt="Spotify logo"></a></li>
+          <li><a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F189008416119%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink%26source_id%3D1441792"><img src="/icons/messenger.svg" alt="Messenger logo"></a></li>
+          <li><a href="https://www.facebook.com/racingpost"><img src="/icons/facebook.svg" alt="Facebook logo"></a></li>
+        </ul>
+        <div class="copy">
+          <p>Bets are accepted in accordance with the operator's rules.</p>
+            <p>William Hill is licensed and regulated by the UK Gambling Commission no. 000-039225 R-319373-001</p>
+            <p>The registered office of William Hill is at 6/1 Waterport Place, Gibraltar, with registered company number 99191.</p>
+            <p>
+            William Hill is committed to supporting Responsible Gambling
+          <p><p>
+            If you click on a link on this site which takes you to a bookmaker or casino and you subsequently open an account, Racingpost may receive a commission.
+            </p>
+        </div>
       </div>
     </footer>
     <script src="app.js"></script>

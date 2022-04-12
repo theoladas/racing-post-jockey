@@ -48,9 +48,6 @@ img {
   display: block;
   border-radius: 5px;
   border: none;
-  &.jockey-img {
-    margin: 0 auto;
-  }
 }
 
 a,
@@ -75,9 +72,15 @@ header {
   min-height: 5vh;
   border-bottom: 2px solid #d11f25;
   nav {
-    padding: 3rem;
+    padding: 24px;
     display: flex;
     justify-content: space-between;
+    .logo-link {
+      border: none;
+      &:hover {
+        background-color: transparent;
+      }
+    }
     #logo {
       width: 150px;
       object-fit: contain;
@@ -88,11 +91,17 @@ header {
 // JOCKEY WRAPPER SECTION
 .jockey-wrapper {
   position: relative;
-  padding-top: 5em;
+  padding-top: 62px;
   .functionality,
   .tip,
   .score {
     padding-top: 1rem;
+  }
+  .image {
+    .exercice-img {
+      margin: 0 auto;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
   }
   .tip {
     font-weight: 300;
@@ -100,6 +109,18 @@ header {
   .functionality {
     button {
       margin-left: 0.5rem;
+      h2 {
+        color: black;
+        margin-bottom: 0.4rem;
+      }
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+  .score {
+    span {
+      color: #d11f25;
     }
   }
 }
@@ -107,12 +128,10 @@ header {
 // SLIDE NAVIGATION
 .slide-navigation {
   width: 80%;
-  .tip-text {
-    width: 350px;
-  }
+  padding-bottom: 48px;
   .next {
     display: block;
-    // margin-left: auto;
+    margin-left: auto;
     background-color: #ea212e;
     color: #fff;
     cursor: pointer;
@@ -125,3 +144,37 @@ header {
 }
 
 // FOOTER
+footer {
+  background-color: #cdcccb;
+  padding: 48px;
+  .footer-wrapper {
+    img {
+      width: 150px;
+      object-fit: contain;
+    }
+    ul {
+      li {
+        list-style: none;
+        margin-right: 10px;
+        transition: all 0.4s ease;
+        &:hover {
+          transform: translateY(-5px);
+        }
+        a {
+          border: none;
+          background-color: transparent;
+          img {
+            width: 35px;
+          }
+        }
+      }
+    }
+    .copy {
+      p {
+        font-size: 14px;
+        text-align: center;
+        line-height: 35px;
+      }
+    }
+  }
+}
