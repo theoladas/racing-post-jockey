@@ -14,9 +14,40 @@ body {
   color: #02694c;
 }
 
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #d11f25;
+}
+
+h3 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: black;
+}
+h3span {
+  color: #ea212e;
+}
+
+p {
+  color: black;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 img {
   max-width: 100%;
   display: block;
+  border-radius: 5px;
+}
+img.jockey-img {
+  margin: 0 auto;
 }
 
 a,
@@ -38,7 +69,7 @@ button:hover {
 }
 
 header {
-  min-height: 10vh;
+  min-height: 5vh;
   border-bottom: 2px solid #d11f25;
 }
 header nav {
@@ -50,4 +81,32 @@ header nav #logo {
   width: 150px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.jockey-wrapper {
+  padding-top: 5em;
+}
+.jockey-wrapper .functionality,
+.jockey-wrapper .tip,
+.jockey-wrapper .score {
+  padding-top: 1rem;
+}
+.jockey-wrapper .functionality button {
+  margin-left: 0.5rem;
+}
+
+.slide-navigation {
+  width: 80%;
+}
+.slide-navigation .next {
+  display: block;
+  margin-left: auto;
+  background-color: #ea212e;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.slide-navigation .next:hover {
+  background-color: white;
+  color: #ea212e;
 }/*# sourceMappingURL=style.css.map */

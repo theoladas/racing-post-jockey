@@ -14,10 +14,36 @@ body {
   color: #cdcccb;
   color: #02694c;
 }
-
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #d11f25;
+}
+h3 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: black;
+  &span {
+    color: #ea212e;
+  }
+}
+p {
+  color: black;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 img {
   max-width: 100%;
   display: block;
+  border-radius: 5px;
+  &.jockey-img {
+    margin: 0 auto;
+  }
 }
 
 a,
@@ -39,7 +65,7 @@ button {
 
 // HEADER
 header {
-  min-height: 10vh;
+  min-height: 5vh;
   border-bottom: 2px solid #d11f25;
   nav {
     padding: 3rem;
@@ -48,6 +74,39 @@ header {
     #logo {
       width: 150px;
       object-fit: contain;
+    }
+  }
+}
+
+// JOCKEY WRAPPER SECTION
+.jockey-wrapper {
+  padding-top: 5em;
+  .functionality,
+  .tip,
+  .score {
+    padding-top: 1rem;
+  }
+  .functionality {
+    button {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+// SLIDE NAVIGATION
+.slide-navigation {
+  width: 80%;
+  .next {
+    display: block;
+    margin-left: auto;
+    background-color: #ea212e;
+    color: #fff;
+    cursor: pointer;
+
+    transition: all 0.4s ease;
+    &:hover {
+      background-color: #ffff;
+      color: #ea212e;
     }
   }
 }
