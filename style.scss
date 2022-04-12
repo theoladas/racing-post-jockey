@@ -80,7 +80,20 @@ header {
 
 // JOCKEY WRAPPER SECTION
 .jockey-wrapper {
+  position: relative;
   padding-top: 5em;
+  .graph-img {
+    opacity: 0.6;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+  }
+  .graph2-img {
+    opacity: 0.7;
+    position: absolute;
+    top: 70%;
+    right: 70%;
+  }
   .functionality,
   .tip,
   .score {
