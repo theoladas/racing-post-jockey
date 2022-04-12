@@ -7,11 +7,6 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #171717;
-  color: #585858;
-  color: #d11f25;
-  color: #ea212e;
-  color: #cdcccb;
-  color: #02694c;
 }
 
 h1 {
@@ -23,11 +18,12 @@ h1 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 36px;
   letter-spacing: 2px;
   color: black;
 }
 h3span {
+  font-size: 36px;
   color: #ea212e;
 }
 
@@ -92,49 +88,45 @@ header nav #logo {
   object-fit: contain;
 }
 
-.jockey-wrapper {
+.exercise-wrapper {
   position: relative;
-  padding-top: 62px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
-.jockey-wrapper .functionality,
-.jockey-wrapper .tip,
-.jockey-wrapper .score {
+.exercise-wrapper .functionality,
+.exercise-wrapper .tip,
+.exercise-wrapper .score {
   padding-top: 1rem;
 }
-.jockey-wrapper .image .exercice-img {
+.exercise-wrapper .image .exercice-img {
   margin: 0 auto;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.jockey-wrapper .tip {
+.exercise-wrapper .tip {
   font-weight: 300;
 }
-.jockey-wrapper .functionality button {
+.exercise-wrapper .functionality button {
   margin-left: 0.5rem;
 }
-.jockey-wrapper .functionality button h2 {
+.exercise-wrapper .functionality button h2 {
   color: black;
   margin-bottom: 0.4rem;
 }
-.jockey-wrapper .functionality button span {
+.exercise-wrapper .functionality button span {
   font-size: 16px;
 }
-.jockey-wrapper .score span {
+.exercise-wrapper .score-card {
+  padding: 24px 0px;
+}
+.exercise-wrapper .score-card span {
   color: #d11f25;
 }
-
-.slide-navigation {
-  width: 80%;
-  padding-bottom: 48px;
-}
-.slide-navigation .next {
-  display: block;
-  margin-left: auto;
+.exercise-wrapper .next-btn {
   background-color: #ea212e;
   color: #fff;
   cursor: pointer;
   transition: all 0.4s ease;
 }
-.slide-navigation .next:hover {
+.exercise-wrapper .next-btn:hover {
   background-color: white;
   color: #ea212e;
 }

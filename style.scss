@@ -8,11 +8,11 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #171717;
-  color: #585858;
-  color: #d11f25;
-  color: #ea212e;
-  color: #cdcccb;
-  color: #02694c;
+  // color: #585858;
+  // color: #d11f25;
+  // color: #ea212e;
+  // color: #cdcccb;
+  // color: #02694c;
 }
 h1 {
   font-size: 3rem;
@@ -23,10 +23,11 @@ h1 {
   color: #d11f25;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 36px;
   letter-spacing: 2px;
   color: black;
   &span {
+    font-size: 36px;
     color: #ea212e;
   }
 }
@@ -49,7 +50,6 @@ img {
   border-radius: 5px;
   border: none;
 }
-
 a,
 button {
   font-weight: 700;
@@ -89,9 +89,10 @@ header {
 }
 
 // JOCKEY WRAPPER SECTION
-.jockey-wrapper {
+.exercise-wrapper {
   position: relative;
-  padding-top: 62px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   .functionality,
   .tip,
   .score {
@@ -100,7 +101,6 @@ header {
   .image {
     .exercice-img {
       margin: 0 auto;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
   }
   .tip {
@@ -118,20 +118,13 @@ header {
       }
     }
   }
-  .score {
+  .score-card {
+    padding: 24px 0px;
     span {
       color: #d11f25;
     }
   }
-}
-
-// SLIDE NAVIGATION
-.slide-navigation {
-  width: 80%;
-  padding-bottom: 48px;
-  .next {
-    display: block;
-    margin-left: auto;
+  .next-btn {
     background-color: #ea212e;
     color: #fff;
     cursor: pointer;
