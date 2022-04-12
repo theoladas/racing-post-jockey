@@ -1,0 +1,53 @@
+// BASE STYLES
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #171717;
+  color: #585858;
+  color: #d11f25;
+  color: #ea212e;
+  color: #cdcccb;
+  color: #02694c;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a,
+button {
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid #ea212e;
+  border-radius: 4px;
+  padding: 8px 30px;
+  background-color: #fff;
+  color: #ea212e;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  &:hover {
+    background-color: #ea212e;
+    color: #fff;
+  }
+}
+
+// HEADER
+header {
+  min-height: 10vh;
+  border-bottom: 2px solid #d11f25;
+  nav {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    #logo {
+      width: 150px;
+      object-fit: contain;
+    }
+  }
+}
