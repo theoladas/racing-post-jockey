@@ -2,7 +2,7 @@
 // Exercise_2
 function exercise2() {
   const title = (document.querySelector(".exercise-title").innerHTML =
-    "SIDE PLANK (LEFT & RIGHT SIDES)");
+    "SIDE PLANK");
   const image = (document.getElementById("exercice-img").src =
     "/img/2image-side-plank.jpg");
   const point1 = (document.querySelector(".point-1-span").innerHTML =
@@ -70,7 +70,7 @@ function exercise5() {
 // Success Results
 function successResults() {
   const title = (document.querySelector(".exercise-title").innerHTML =
-    "YOU CAN BE A PROFESSIONAL JOCKEY!");
+    "EXCELLENT WORK!");
   const image = (document.getElementById("exercice-img").src =
     "/img/image-fit-yes.jpg");
   document.querySelector(".point-btn1").style.display = "none";
@@ -82,7 +82,7 @@ function successResults() {
 // Unsuccessful  Results
 function unSuccessResults() {
   const title = (document.querySelector(".exercise-title").innerHTML =
-    "YOU NEED MORE IMPROVEMENT");
+    "SIGNS OF IMPROVEMENT");
   const image = (document.getElementById("exercice-img").src =
     "/img/image-fit-no.jpg");
   document.querySelector(".point-btn1").style.display = "none";
