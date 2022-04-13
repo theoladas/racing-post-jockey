@@ -7,6 +7,11 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #171717;
+  color: #585858;
+  color: #d11f25;
+  color: #ea212e;
+  color: #cdcccb;
+  color: #02694c;
 }
 
 h1 {
@@ -162,6 +167,17 @@ header nav #logo {
   background-color: #cdcccb;
   color: #fff;
   cursor: not-allowed;
+}
+.exercise-wrapper .exercise-navigation .results-btn {
+  background-color: #02694c;
+  border: 1px solid #02694c;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.exercise-wrapper .exercise-navigation .results-btn:hover {
+  background-color: #fff;
+  color: #02694c;
 }
 
 footer {
