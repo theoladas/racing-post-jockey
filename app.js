@@ -61,11 +61,38 @@ const exercise1 = {
 };
 
 const nextBtn = document.querySelector(".next-btn");
+nextBtn.disabled = true;
 const pointBtn1 = document.querySelector(".point-btn1");
 const pointBtn2 = document.querySelector(".point-btn2");
 const pointBtn3 = document.querySelector(".point-btn3");
 const spanScore = document.querySelector(".score");
 let totalScore = 0;
+// FUNCTIONS
+function pointBtnsDisabled() {
+  pointBtn1.disabled = true;
+  pointBtn2.disabled = true;
+  pointBtn3.disabled = true;
+}
+function addOnePoint() {
+  let totalScore = (spanScore.innerHTML = `${(this.spanScore =
+    exercise1.score + 1)}`);
+  nextBtn.disabled = false;
+  pointBtnsDisabled();
+}
+// add two points function
+function addTwoPoints() {
+  spanScore.innerHTML = `${(this.spanScore = exercise1.score + 2)}`;
+  nextBtn.disabled = false;
+  pointBtnsDisabled();
+}
+// add three points function
+function addThreePoints() {
+  spanScore.innerHTML = `${(this.spanScore = exercise1.score + 3)}`;
+  nextBtn.disabled = false;
+  pointBtnsDisabled();
+}
+
+// EVENT LISTENERS
 pointBtn1.addEventListener("click", () => {
   addOnePoint();
 });
@@ -76,22 +103,9 @@ pointBtn3.addEventListener("click", () => {
   addThreePoints();
 });
 
-// FUNCTIONS
-function addOnePoint() {
-  spanScore.innerHTML = `${(this.spanScore = exercise1.score + 1)}`;
-  this.clicked = true;
-}
-// add two points function
-function addTwoPoints() {
-  spanScore.innerHTML = `${(this.spanScore = exercise1.score + 2)}`;
-  this.clicked = true;
-}
-// add three points function
-function addThreePoints() {
-  spanScore.innerHTML = `${(this.spanScore = exercise1.score + 3)}`;
-  this.clicked = true;
-}
-
+nextBtn.addEventListener("click", () => {
+  alert("test");
+});
 // προχειρο
 
 // function exercise2() {
