@@ -39,6 +39,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .flex-row {
   display: flex;
@@ -58,7 +59,8 @@ button {
   border: 1px solid #ea212e;
   border-radius: 4px;
   padding: 8px 30px;
-  margin-left: 0.5rem;
+  margin-left: 10px;
+  margin-bottom: 10px;
   background-color: #fff;
   color: #ea212e;
   cursor: pointer;
@@ -149,20 +151,22 @@ header {
       color: #d11f25;
     }
   }
-  .next-btn {
-    background-color: #ea212e;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    &:hover {
-      background-color: #ffff;
-      color: #ea212e;
+  .exercise-navigation {
+    .exercise-btn {
+      background-color: #ea212e;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      &:hover {
+        background-color: #ffff;
+        color: #ea212e;
+      }
     }
-  }
-  .next-btn:disabled {
-    background-color: #cdcccb;
-    color: #fff;
-    cursor: not-allowed;
+    .exercise-btn:disabled {
+      background-color: #cdcccb;
+      color: #fff;
+      cursor: not-allowed;
+    }
   }
 }
 
