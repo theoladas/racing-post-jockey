@@ -74,10 +74,7 @@ function successResults() {
     "EXCELLENT WORK!");
   const image = (document.getElementById("exercice-img").src =
     "img/image-fit-yes.jpg");
-  document.querySelector(".point-btn1").style.display = "none";
-  document.querySelector(".point-btn2").style.display = "none";
-  document.querySelector(".point-btn3").style.display = "none";
-  document.querySelector(".tip").style.display = "none";
+  pointBtnsDisplayNone();
   resultsBtn.disabled = true;
 }
 // Potential Results page
@@ -86,10 +83,7 @@ function potentialResults() {
     "SIGNS OF POTENTIAL");
   const image = (document.getElementById("exercice-img").src =
     "img/image-fit-no.jpg");
-  document.querySelector(".point-btn1").style.display = "none";
-  document.querySelector(".point-btn2").style.display = "none";
-  document.querySelector(".point-btn3").style.display = "none";
-  document.querySelector(".tip").style.display = "none";
+  pointBtnsDisplayNone();
   resultsBtn.disabled = true;
 }
 // Unsuccesfull Results page
@@ -98,10 +92,7 @@ function unsuccessfullResults() {
     "NEEDS IMPROVEMENT");
   const image = (document.getElementById("exercice-img").src =
     "img/image-fit-no.jpg");
-  document.querySelector(".point-btn1").style.display = "none";
-  document.querySelector(".point-btn2").style.display = "none";
-  document.querySelector(".point-btn3").style.display = "none";
-  document.querySelector(".tip").style.display = "none";
+  pointBtnsDisplayNone();
   resultsBtn.disabled = true;
 }
 
@@ -161,33 +152,39 @@ function pointBtnsDisabled() {
     resultsBtn.disabled = false;
   }
 }
-// Add one point in user's span score
+
+// Set display to none for all point btns & tip
+function pointBtnsDisplayNone() {
+  document.querySelector(".point-btn1").style.display = "none";
+  document.querySelector(".point-btn2").style.display = "none";
+  document.querySelector(".point-btn3").style.display = "none";
+  document.querySelector(".tip").style.display = "none";
+}
+
+// Add 1 point in user's span score
 function addOnePoint() {
   if ((pointBtn1.clicked = true)) {
     index++;
     score = score + 1;
     spanScore.innerHTML = `${score}`;
-    console.log(score);
     pointBtnsDisabled();
   }
 }
-// Add two points in user's span score
+// Add 2 points in user's span score
 function addTwoPoints() {
   if ((pointBtn2.clicked = true)) {
     index++;
     score = score + 2;
     spanScore.innerHTML = `${score}`;
-    console.log(score);
     pointBtnsDisabled();
   }
 }
-// Add three points in user's span score
+// Add 3 points in user's span score
 function addThreePoints() {
   if ((pointBtn3.clicked = true)) {
     index++;
     score = score + 3;
     spanScore.innerHTML = `${score}`;
-    console.log(score);
     pointBtnsDisabled();
   }
 }
@@ -232,14 +229,14 @@ resultsBtn.addEventListener("click", () => {
   if (Number(spanScore.innerHTML) >= 11) {
     // show Success results page
     successResults();
-    // if the total score is less than 11 and greater than 3
+    // if the total score is less than 11 and greater than 6
   } else if (
     Number(spanScore.innerHTML) >= 10 ||
-    Number(spanScore.innerHTML) >= 3
+    Number(spanScore.innerHTML) >= 6
   ) {
     // show Signs of Potential results page
     potentialResults();
-    // if the total score is less than 3
+    // if the total score is less than 6
   } else {
     // show Needs Improvement results page
     unsuccessfullResults();
