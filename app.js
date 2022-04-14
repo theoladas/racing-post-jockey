@@ -1,4 +1,4 @@
-// DATA
+// DATA ---
 
 // Exercise_2 page
 function exercise2() {
@@ -105,7 +105,7 @@ function unsuccessfullResults() {
   resultsBtn.disabled = true;
 }
 
-// SELECTORS
+// SELECTORS ---
 
 // Exercise (page navigation) btns
 const exercise2Btn = document.querySelector(".exercise2-btn");
@@ -130,9 +130,9 @@ const pointBtn3 = document.querySelector(".point-btn3");
 // Span (total) Score
 let spanScore = document.querySelector(".score");
 // Default Score
-var score = 0;
+let score = 0;
 
-// FUNCTIONS
+// FUNCTIONS ---
 
 // All point btns are enabled
 function pointBtnsEnabled() {
