@@ -49,8 +49,8 @@ Mobile
 
 ### VS Code Plugins
 
-- Live Server
-- Live Sass Compiler
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+- [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
 
 ## Functional Requirements
 
