@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://theoladas.github.io/Edie-Homepage-DevChallenge/">
+    <a href="https://theoladas.github.io/racing-post-jockey/">
       Live
     </a>
    <span> | </span>
-       <a href="https://theoladas.github.io/Edie-Homepage-DevChallenge/">
+       <a href="https://github.com/theoladas/racing-post-jockey">
       Repo
     </a>
   </h3>
