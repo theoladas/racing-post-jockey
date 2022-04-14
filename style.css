@@ -106,6 +106,7 @@ header nav #logo {
 
 .exercise-wrapper {
   padding: 48px 0px;
+  min-height: 80vh;
 }
 .exercise-wrapper .functionality,
 .exercise-wrapper .tip,

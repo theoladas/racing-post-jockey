@@ -128,10 +128,40 @@ const pointBtn3 = document.querySelector(".point-btn3");
 // Span (total) Score
 let spanScore = document.querySelector(".score");
 // Default Score
-score = 0;
+let score = 0;
 
 // FUNCTIONS
 
+// Add one point in user's span score
+function addOnePoint() {
+  // spanScore.innerHTML = ${(spanScore = score + 1)};
+  if ((pointBtn1.clicked = true)) {
+    score = score + 1;
+    let point1 = (spanScore.innerHTML = `${score}`);
+    console.log(score);
+    pointBtnsDisabled();
+  }
+}
+// Add two points in user's span score
+function addTwoPoints() {
+  if ((pointBtn2.clicked = true)) {
+    score = score + 2;
+    let point2 = (spanScore.innerHTML = `${score}`);
+    console.log(score);
+    pointBtnsDisabled();
+  }
+}
+// Add three points in user's span score
+function addThreePoints() {
+  // spanScore.innerHTML = ${(spanScore = score + 3)};
+  // exercise2Btn.disabled = false;
+  if ((pointBtn3.clicked = true)) {
+    score = score + 3;
+    let point3 = (spanScore.innerHTML = `${score}`);
+    console.log(score);
+    pointBtnsDisabled();
+  }
+}
 // All point btns are enabled
 function pointBtnsEnabled() {
   pointBtn1.disabled = false;
@@ -144,38 +174,10 @@ function pointBtnsDisabled() {
   pointBtn2.disabled = true;
   pointBtn3.disabled = true;
 }
-// Add one point in user's span score
-function addOnePoint() {
-  // spanScore.innerHTML = `${(this.spanScore = score + 1)}`;
-  if ((pointBtn1.clicked = true)) {
-    let point1 = (spanScore.innerHTML = `${(this.spanScore =
-      score + this.score++)}`);
-    console.log(point1);
-    pointBtnsDisabled();
-  }
-}
-// Add two points in user's span score
-function addTwoPoints() {
-  if ((pointBtn2.clicked = true)) {
-    let point2 = (spanScore.innerHTML = `${(this.spanScore = this.score +=
-      2)}`);
-    pointBtnsDisabled();
-  }
-}
-// Add three points in user's span score
-function addThreePoints() {
-  // spanScore.innerHTML = `${(this.spanScore = score + 3)}`;
-  // exercise2Btn.disabled = false;
-  if ((pointBtn3.clicked = true)) {
-    let point3 = (spanScore.innerHTML = `${(this.spanScore = this.score +=
-      3)}`);
-    pointBtnsDisabled();
-  }
-}
 // Reset app functionality
 function resetApp() {
   window.location.href = "index.html";
-  this.score = 0;
+  // this.score = 0;
 }
 
 // EVENT LISTENERS
