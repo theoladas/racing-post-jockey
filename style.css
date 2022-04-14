@@ -26,6 +26,11 @@ h3span {
   font-size: 36px;
   color: #ea212e;
 }
+@media (max-width: 320px) {
+  h3 {
+    font-size: 32px;
+  }
+}
 
 .flex-column {
   display: flex;
@@ -89,7 +94,6 @@ header nav #logo {
 }
 
 .exercise-wrapper {
-  position: relative;
   padding: 48px 0px;
 }
 .exercise-wrapper .functionality,
@@ -121,9 +125,12 @@ header nav #logo {
   margin: 0 auto;
 }
 .exercise-wrapper .tip {
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   line-height: 20px;
   text-align: center;
+  padding: 10px 30px;
+  padding-bottom: 0px;
   max-width: 700px;
 }
 @media (max-width: 320px) {
