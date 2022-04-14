@@ -5,7 +5,7 @@ function exercise2() {
   const title = (document.querySelector(".exercise-title").innerHTML =
     "SIDE PLANK");
   const image = (document.getElementById("exercice-img").src =
-    "/img/2image-side-plank.jpg");
+    "img/2image-side-plank.jpg");
   const point1 = (document.querySelector(".point-1-span").innerHTML =
     "0-30 secs");
   const point2 = (document.querySelector(".point-2-span").innerHTML =
@@ -22,7 +22,7 @@ function exercise3() {
   const title = (document.querySelector(".exercise-title").innerHTML =
     "SINGLE LEG SIT TO STAND");
   const image = (document.getElementById("exercice-img").src =
-    "/img/3image-single-leg-sit.jpg");
+    "img/3image-single-leg-sit.jpg");
   const point1 = (document.querySelector(".point-1-span").innerHTML =
     "0-10 reps");
   const point2 = (document.querySelector(".point-2-span").innerHTML =
@@ -39,7 +39,7 @@ function exercise4() {
   const title = (document.querySelector(".exercise-title").innerHTML =
     "PRESS UP");
   const image = (document.getElementById("exercice-img").src =
-    "/img/4image-press-up.jpg");
+    "img/4image-press-up.jpg");
   const point1 = (document.querySelector(".point-1-span").innerHTML =
     "0-20 reps");
   const point2 = (document.querySelector(".point-2-span").innerHTML =
@@ -56,7 +56,7 @@ function exercise5() {
   const title = (document.querySelector(".exercise-title").innerHTML =
     "DOUBLE LEG WALL SIT AND HOLD");
   const image = (document.getElementById("exercice-img").src =
-    "/img/5image-double-leg-sit.jpg");
+    "img/5image-double-leg-sit.jpg");
   const point1 = (document.querySelector(".point-1-span").innerHTML =
     "0-30 secs");
   const point2 = (document.querySelector(".point-2-span").innerHTML =
@@ -73,7 +73,7 @@ function successResults() {
   const title = (document.querySelector(".exercise-title").innerHTML =
     "EXCELLENT WORK!");
   const image = (document.getElementById("exercice-img").src =
-    "/img/image-fit-yes.jpg");
+    "img/image-fit-yes.jpg");
   document.querySelector(".point-btn1").style.display = "none";
   document.querySelector(".point-btn2").style.display = "none";
   document.querySelector(".point-btn3").style.display = "none";
@@ -85,7 +85,7 @@ function potentialResults() {
   const title = (document.querySelector(".exercise-title").innerHTML =
     "SIGNS OF POTENTIAL");
   const image = (document.getElementById("exercice-img").src =
-    "/img/image-fit-no.jpg");
+    "img/image-fit-no.jpg");
   document.querySelector(".point-btn1").style.display = "none";
   document.querySelector(".point-btn2").style.display = "none";
   document.querySelector(".point-btn3").style.display = "none";
@@ -97,7 +97,7 @@ function unsuccessfullResults() {
   const title = (document.querySelector(".exercise-title").innerHTML =
     "NEEDS IMPROVEMENT");
   const image = (document.getElementById("exercice-img").src =
-    "/img/image-fit-no.jpg");
+    "img/image-fit-no.jpg");
   document.querySelector(".point-btn1").style.display = "none";
   document.querySelector(".point-btn2").style.display = "none";
   document.querySelector(".point-btn3").style.display = "none";
