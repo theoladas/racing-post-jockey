@@ -1,5 +1,6 @@
 // DATA
-// Exercise_2
+
+// Exercise_2 page
 function exercise2() {
   const title = (document.querySelector(".exercise-title").innerHTML =
     "SIDE PLANK");
@@ -16,7 +17,7 @@ function exercise2() {
   exercise2Btn.disabled = true;
   pointBtnsEnabled();
 }
-// Exercise_3
+// Exercise_3 page
 function exercise3() {
   const title = (document.querySelector(".exercise-title").innerHTML =
     "SINGLE LEG SIT TO STAND");
@@ -33,7 +34,7 @@ function exercise3() {
   exercise3Btn.disabled = true;
   pointBtnsEnabled();
 }
-// Exercise_4
+// Exercise_4 page
 function exercise4() {
   const title = (document.querySelector(".exercise-title").innerHTML =
     "PRESS UP");
@@ -50,7 +51,7 @@ function exercise4() {
   exercise4Btn.disabled = true;
   pointBtnsEnabled();
 }
-// Exercise_5
+// Exercise_5 page
 function exercise5() {
   const title = (document.querySelector(".exercise-title").innerHTML =
     "DOUBLE LEG WALL SIT AND HOLD");
@@ -67,7 +68,7 @@ function exercise5() {
   exercise5Btn.disabled = true;
   pointBtnsEnabled();
 }
-// Success Results
+// Success Results page
 function successResults() {
   const title = (document.querySelector(".exercise-title").innerHTML =
     "EXCELLENT WORK!");
@@ -79,7 +80,7 @@ function successResults() {
   document.querySelector(".tip").style.display = "none";
   resultsBtn.disabled = true;
 }
-// Unsuccessful  Results
+// Unsuccessful  Results page
 function unSuccessResults() {
   const title = (document.querySelector(".exercise-title").innerHTML =
     "SIGNS OF IMPROVEMENT");
@@ -93,49 +94,51 @@ function unSuccessResults() {
 }
 
 // SELECTORS
-// Next exercise's btns
+
+// Exercise (page navigation) btns
 const exercise2Btn = document.querySelector(".exercise2-btn");
 const exercise3Btn = document.querySelector(".exercise3-btn");
 const exercise4Btn = document.querySelector(".exercise4-btn");
 const exercise5Btn = document.querySelector(".exercise5-btn");
 const resultsBtn = document.querySelector(".results-btn");
-// Disable all exercise's buttons
-// exercise2Btn.disabled = true;
-// exercise3Btn.disabled = true;
-// exercise4Btn.disabled = true;
-// exercise5Btn.disabled = true;
-// resultsBtn.disabled = true;
+// Disable all exercise btns
+exercise2Btn.disabled = true;
+exercise3Btn.disabled = true;
+exercise4Btn.disabled = true;
+exercise5Btn.disabled = true;
+resultsBtn.disabled = true;
 // Point btns
 const pointBtn1 = document.querySelector(".point-btn1");
 const pointBtn2 = document.querySelector(".point-btn2");
 const pointBtn3 = document.querySelector(".point-btn3");
-// Span Score
+// Span (total) Score
 let spanScore = document.querySelector(".score");
-// Score
+// Default Score
 score = 0;
 
 // FUNCTIONS
-// All point btns enabled
+
+// All point btns are enabled
 function pointBtnsEnabled() {
   pointBtn1.disabled = false;
   pointBtn2.disabled = false;
   pointBtn3.disabled = false;
 }
-// All point btns disabled
+// All point btns are disabled
 function pointBtnsDisabled() {
   pointBtn1.disabled = true;
   pointBtn2.disabled = true;
   pointBtn3.disabled = true;
 }
-// Add one point in user's display score
+// Add one point in user's span score
 function addOnePoint() {
   // spanScore.innerHTML = `${(this.spanScore = score + 1)}`;
   if ((pointBtn1.clicked = true)) {
-    let point1 = (spanScore.innerHTML = `${(this.spanScore = score++)}`);
+    let point1 = (spanScore.innerHTML = `${(this.spanScore = this.score++)}`);
     pointBtnsDisabled();
   }
 }
-// Add two points in user's display score
+// Add two points in user's span score
 function addTwoPoints() {
   if ((pointBtn2.clicked = true)) {
     let point2 = (spanScore.innerHTML = `${(this.spanScore = this.score +=
@@ -143,7 +146,7 @@ function addTwoPoints() {
     pointBtnsDisabled();
   }
 }
-// Add three points in user's display score
+// Add three points in user's span score
 function addThreePoints() {
   // spanScore.innerHTML = `${(this.spanScore = score + 3)}`;
   // exercise2Btn.disabled = false;
@@ -155,31 +158,44 @@ function addThreePoints() {
 }
 
 // EVENT LISTENERS
+
+// Point1 button - Add one point functionality
 pointBtn1.addEventListener("click", () => {
   addOnePoint();
 });
+// Point2 button - Add two points functionality
 pointBtn2.addEventListener("click", () => {
   addTwoPoints();
 });
+// Point3 button - Add three points functionality
 pointBtn3.addEventListener("click", () => {
   addThreePoints();
 });
+// Move to Exercise2 page
 exercise2Btn.addEventListener("click", () => {
   exercise2();
 });
+// Move to Exercise3 page
 exercise3Btn.addEventListener("click", () => {
   exercise3();
 });
+// Move to Exercise4 page
 exercise4Btn.addEventListener("click", () => {
   exercise4();
 });
+// Move to Exercise5 page
 exercise5Btn.addEventListener("click", () => {
   exercise5();
 });
+// Move to Results page
 resultsBtn.addEventListener("click", () => {
+  // if total score is greater or equal to 11
   if (Number(spanScore.innerHTML) >= 11) {
+    // show Success results page
     successResults();
+    // if total score is less than 11
   } else {
+    // show Unsuccess results page
     unSuccessResults();
   }
 });
