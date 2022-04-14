@@ -111,6 +111,7 @@ const pointBtn2 = document.querySelector(".point-btn2");
 const pointBtn3 = document.querySelector(".point-btn3");
 // Span Score
 let spanScore = document.querySelector(".score");
+// Score
 score = 0;
 
 // FUNCTIONS
@@ -128,20 +129,29 @@ function pointBtnsDisabled() {
 }
 // Add one point in user's display score
 function addOnePoint() {
-  spanScore.innerHTML = `${(this.spanScore = score + 1)}`;
-  pointBtnsDisabled();
+  // spanScore.innerHTML = `${(this.spanScore = score + 1)}`;
+  if ((pointBtn1.clicked = true)) {
+    let point1 = (spanScore.innerHTML = `${(this.spanScore = score++)}`);
+    pointBtnsDisabled();
+  }
 }
 // Add two points in user's display score
 function addTwoPoints() {
-  spanScore.innerHTML = `${(this.spanScore = score + 2)}`;
-  // exercise2Btn.disabled = false;
-  pointBtnsDisabled();
+  if ((pointBtn2.clicked = true)) {
+    let point2 = (spanScore.innerHTML = `${(this.spanScore = this.score +=
+      2)}`);
+    pointBtnsDisabled();
+  }
 }
 // Add three points in user's display score
 function addThreePoints() {
-  spanScore.innerHTML = `${(this.spanScore = score + 3)}`;
+  // spanScore.innerHTML = `${(this.spanScore = score + 3)}`;
   // exercise2Btn.disabled = false;
-  pointBtnsDisabled();
+  if ((pointBtn3.clicked = true)) {
+    let point3 = (spanScore.innerHTML = `${(this.spanScore = this.score +=
+      3)}`);
+    pointBtnsDisabled();
+  }
 }
 
 // EVENT LISTENERS
@@ -167,6 +177,9 @@ exercise5Btn.addEventListener("click", () => {
   exercise5();
 });
 resultsBtn.addEventListener("click", () => {
-  successResults();
-  // unSuccessResults();
+  if (Number(spanScore.innerHTML) >= 11) {
+    successResults();
+  } else {
+    unSuccessResults();
+  }
 });
