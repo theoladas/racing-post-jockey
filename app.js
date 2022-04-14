@@ -116,11 +116,13 @@ const resultsBtn = document.querySelector(".results-btn");
 const resetBtn = document.querySelector(".reset-btn");
 
 // Disable all exercise btns
-// exercise2Btn.disabled = true;
-// exercise3Btn.disabled = true;
-// exercise4Btn.disabled = true;
-// exercise5Btn.disabled = true;
-// resultsBtn.disabled = true;
+exercise2Btn.disabled = true;
+exercise3Btn.disabled = true;
+exercise4Btn.disabled = true;
+exercise5Btn.disabled = true;
+resultsBtn.disabled = true;
+let index = 1;
+
 // Point btns
 const pointBtn1 = document.querySelector(".point-btn1");
 const pointBtn2 = document.querySelector(".point-btn2");
@@ -128,40 +130,10 @@ const pointBtn3 = document.querySelector(".point-btn3");
 // Span (total) Score
 let spanScore = document.querySelector(".score");
 // Default Score
-let score = 0;
+var score = 0;
 
 // FUNCTIONS
 
-// Add one point in user's span score
-function addOnePoint() {
-  // spanScore.innerHTML = ${(spanScore = score + 1)};
-  if ((pointBtn1.clicked = true)) {
-    score = score + 1;
-    let point1 = (spanScore.innerHTML = `${score}`);
-    console.log(score);
-    pointBtnsDisabled();
-  }
-}
-// Add two points in user's span score
-function addTwoPoints() {
-  if ((pointBtn2.clicked = true)) {
-    score = score + 2;
-    let point2 = (spanScore.innerHTML = `${score}`);
-    console.log(score);
-    pointBtnsDisabled();
-  }
-}
-// Add three points in user's span score
-function addThreePoints() {
-  // spanScore.innerHTML = ${(spanScore = score + 3)};
-  // exercise2Btn.disabled = false;
-  if ((pointBtn3.clicked = true)) {
-    score = score + 3;
-    let point3 = (spanScore.innerHTML = `${score}`);
-    console.log(score);
-    pointBtnsDisabled();
-  }
-}
 // All point btns are enabled
 function pointBtnsEnabled() {
   pointBtn1.disabled = false;
@@ -173,11 +145,55 @@ function pointBtnsDisabled() {
   pointBtn1.disabled = true;
   pointBtn2.disabled = true;
   pointBtn3.disabled = true;
+  if (index == 2) {
+    exercise2Btn.disabled = false;
+  }
+  if (index == 3) {
+    exercise3Btn.disabled = false;
+  }
+  if (index == 4) {
+    exercise4Btn.disabled = false;
+  }
+  if (index == 5) {
+    exercise5Btn.disabled = false;
+  }
+  if (index == 6) {
+    resultsBtn.disabled = false;
+  }
+}
+// Add one point in user's span score
+function addOnePoint() {
+  if ((pointBtn1.clicked = true)) {
+    index++;
+    score = score + 1;
+    spanScore.innerHTML = `${score}`;
+    console.log(score);
+    pointBtnsDisabled();
+  }
+}
+// Add two points in user's span score
+function addTwoPoints() {
+  if ((pointBtn2.clicked = true)) {
+    index++;
+    score = score + 2;
+    spanScore.innerHTML = `${score}`;
+    console.log(score);
+    pointBtnsDisabled();
+  }
+}
+// Add three points in user's span score
+function addThreePoints() {
+  if ((pointBtn3.clicked = true)) {
+    index++;
+    score = score + 3;
+    spanScore.innerHTML = `${score}`;
+    console.log(score);
+    pointBtnsDisabled();
+  }
 }
 // Reset app functionality
 function resetApp() {
   window.location.href = "index.html";
-  // this.score = 0;
 }
 
 // EVENT LISTENERS
