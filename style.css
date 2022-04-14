@@ -285,11 +285,12 @@ footer .footer-wrapper ul li a img {
 }
 footer .footer-wrapper .copy p {
   font-size: 14px;
+  line-height: 28px;
   text-align: center;
-  line-height: 35px;
 }
-@media (max-width: 410px) {
+@media (max-width: 768px) {
   footer .footer-wrapper .copy p {
     line-height: 25px;
+    margin-bottom: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
