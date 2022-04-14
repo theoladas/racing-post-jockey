@@ -206,18 +206,20 @@ exercise5Btn.addEventListener("click", () => {
 });
 // Move to Results page
 resultsBtn.addEventListener("click", () => {
-  // if total score is greater or equal to 11
+  // if the total score is greater or equal to 11
   if (Number(spanScore.innerHTML) >= 11) {
     // show Success results page
     successResults();
-    // if total score is less than 11
+    // if the total score is less than 11 and greater than 3
   } else if (
     Number(spanScore.innerHTML) >= 10 ||
     Number(spanScore.innerHTML) >= 3
   ) {
-    // show Improvement results page
+    // show Signs of Potential results page
     potentialResults();
+    // if the total score is less than 3
   } else {
+    // show Needs Improvement results page
     unsuccessfullResults();
   }
 });
