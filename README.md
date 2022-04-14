@@ -1,13 +1,56 @@
-# What will you build?: The Racing Post Jockey Challenge App
- 
-One of our sister brands, the Racing Post, has put together a marketing campaign to attract readership engagement, ahead of an upcoming Horse Racing event.
+<h1 align="center">The Racing Post Jockey Challenge App</h1>
 
-To achieve this, they have produced a video piece where a professional Jockey explains five  exercises of the physical test they need to pass to become professional.
+<div align="center">
+   JS Applicant Test
+</div>
 
-You can watch the video here.
-https://www.youtube.com/watch?v=idQAQzbGGmA
+<div align="center">
+  <h3>
+    <a href="https://theoladas.github.io/Edie-Homepage-DevChallenge/">
+      Live
+    </a>
+   <span> | </span>
+       <a href="https://theoladas.github.io/Edie-Homepage-DevChallenge/">
+      Repo
+    </a>
+  </h3>
+</div>
 
-The idea of this piece is to encourage the audience to take the test themselves, see how they perform and post their results on social media.
+<!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
+- [Overview](#overview)
+  - [Built With](#built-with)
+  - [VS Code Plugins](#vs-code-plugins)
+- [Functional Requirements](#functional-requirements)
+- [Contact](#contact)
+
+<!-- OVERVIEW -->
+
+## Overview
+
+Desktop
+
+![Desktop](https://user-images.githubusercontent.com/67963370/163468057-ddaa9ea5-f429-4edf-a038-0e7426d8476c.png)
+
+
+Mobile
+
+![Mobile](https://user-images.githubusercontent.com/67963370/163468161-2158c0c3-e11d-4fc4-b22a-d3f7ddeb05d4.png)
+
+
+### Built With
+
+- [HTML5](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Sass](https://sass-lang.com/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+### VS Code Plugins
+
+- Live Server
+- Live Sass Compiler
 
 ## Functional Requirements
 
@@ -25,19 +68,6 @@ Each time they add a result the app their current score should update
 
 When they reach the end of the test you should let them know whether or not they could become a professional Jockey.
 
-## Visual requirements
+## Contact
 
-Ideally, the app should be responsive and adapt to mobile displays. 
- 
-You are free to make any aesthetical decisions about the look of the tool, however, we encourage you to try to build something that you think would look good on the racingpost.com website.  
-
-## Other specifications
-
-You are encouraged to use a reactive Javascript framework, in particular Vue.js. However, feel free to use any framework of your choice or build it in vanilla Javascript. It’s up to you!
-
-## Delivery 
-
-Once you are happy with your submission please submit a branch with your name and create a pull request on this repository. 
-
-
- 
+- GitHub [@theoladas](https://github.com/theoladas)
