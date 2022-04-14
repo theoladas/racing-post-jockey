@@ -85,12 +85,23 @@ header nav {
 header nav .logo-link {
   border: none;
 }
+@media (max-width: 520px) {
+  header nav .logo-link {
+    margin: 0 auto;
+  }
+}
 header nav .logo-link:hover {
   background-color: transparent;
 }
 header nav #logo {
+  max-width: 100%;
   width: 150px;
   object-fit: contain;
+}
+@media (max-width: 520px) {
+  header nav .contact-btn {
+    display: none;
+  }
 }
 
 .exercise-wrapper {
@@ -251,6 +262,11 @@ footer .footer-wrapper ul li {
   margin-right: 10px;
   transition: all 0.4s ease;
 }
+@media (max-width: 410px) {
+  footer .footer-wrapper ul li {
+    margin-right: 0px;
+  }
+}
 footer .footer-wrapper ul li:hover {
   transform: translateY(-5px);
 }
@@ -261,8 +277,18 @@ footer .footer-wrapper ul li a {
 footer .footer-wrapper ul li a img {
   width: 35px;
 }
+@media (max-width: 410px) {
+  footer .footer-wrapper ul li a img {
+    width: 25px;
+  }
+}
 footer .footer-wrapper .copy p {
   font-size: 14px;
   text-align: center;
   line-height: 35px;
+}
+@media (max-width: 410px) {
+  footer .footer-wrapper .copy p {
+    line-height: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */
