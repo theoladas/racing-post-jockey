@@ -199,3 +199,8 @@ resultsBtn.addEventListener("click", () => {
     unSuccessResults();
   }
 });
+// reset
+// function resetApp() {
+//   window.location.href = "index.html";
+//   this.score = 0;
+// }

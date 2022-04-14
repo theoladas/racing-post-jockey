@@ -6,15 +6,13 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #171717;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 48px;
   text-transform: uppercase;
-  margin-bottom: 1rem;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5), 0 2px 2px rgba(0, 0, 0, 0.5);
-
+  margin-bottom: 16px;
   color: #d11f25;
 }
 h3 {
@@ -25,9 +23,6 @@ h3 {
     font-size: 36px;
     color: #ea212e;
   }
-}
-p {
-  color: black;
 }
 .flex-column {
   display: flex;
@@ -121,7 +116,6 @@ header {
     font-weight: 300;
     line-height: 20px;
     text-align: center;
-    padding: 20px;
     @media (max-width: 320px) {
       font-size: 14px;
     }
