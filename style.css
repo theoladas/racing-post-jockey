@@ -107,22 +107,34 @@ header nav #logo {
 .exercise-wrapper .score {
   padding-top: 1rem;
 }
+@media (max-width: 520px) {
+  .exercise-wrapper .copy .exercise-title {
+    text-align: center;
+    font-size: 40px;
+    padding: 0px 20px;
+  }
+}
+@media (max-width: 320px) {
+  .exercise-wrapper .copy .exercise-title {
+    font-size: 32px;
+    padding: 0px 10px;
+  }
+}
 .exercise-wrapper .image .exercice-img {
   margin: 0 auto;
 }
 .exercise-wrapper .tip {
   font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+  padding: 20px;
 }
-.exercise-wrapper .functionality button h2 {
-  color: black;
-  margin-bottom: 0.4rem;
+@media (max-width: 320px) {
+  .exercise-wrapper .tip {
+    font-size: 14px;
+  }
 }
-.exercise-wrapper .functionality button span {
-  font-size: 16px;
-}
-.exercise-wrapper .functionality .point-btn1,
-.exercise-wrapper .functionality .point-btn2,
-.exercise-wrapper .functionality .point-btn3 {
+.exercise-wrapper .functionality .point-btn {
   font-weight: 700;
   text-decoration: none;
   border: 1px solid #ea212e;
@@ -134,11 +146,32 @@ header nav #logo {
   cursor: pointer;
   transition: all 0.4s ease;
 }
-.exercise-wrapper .functionality .point-btn1:hover,
-.exercise-wrapper .functionality .point-btn2:hover,
-.exercise-wrapper .functionality .point-btn3:hover {
+.exercise-wrapper .functionality .point-btn:hover {
   background-color: #ea212e;
   color: #fff;
+}
+@media (max-width: 520px) {
+  .exercise-wrapper .functionality .point-btn {
+    padding: 5px 15px;
+  }
+}
+.exercise-wrapper .functionality .point-btn h2 {
+  color: black;
+  margin-bottom: 5px;
+}
+@media (max-width: 520px) {
+  .exercise-wrapper .functionality .point-btn h2 {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+}
+.exercise-wrapper .functionality .point-btn span {
+  font-size: 16px;
+}
+@media (max-width: 520px) {
+  .exercise-wrapper .functionality .point-btn span {
+    font-size: 14px;
+  }
 }
 .exercise-wrapper .functionality .point-btn1:disabled,
 .exercise-wrapper .functionality .point-btn2:disabled,
@@ -152,6 +185,11 @@ header nav #logo {
 }
 .exercise-wrapper .score-card span {
   color: #d11f25;
+}
+@media (max-width: 768px) {
+  .exercise-wrapper .exercise-navigation {
+    flex-direction: column;
+  }
 }
 .exercise-wrapper .exercise-navigation .exercise-btn {
   background-color: #ea212e;

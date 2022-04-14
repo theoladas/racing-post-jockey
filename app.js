@@ -102,11 +102,11 @@ const exercise4Btn = document.querySelector(".exercise4-btn");
 const exercise5Btn = document.querySelector(".exercise5-btn");
 const resultsBtn = document.querySelector(".results-btn");
 // Disable all exercise btns
-exercise2Btn.disabled = true;
-exercise3Btn.disabled = true;
-exercise4Btn.disabled = true;
-exercise5Btn.disabled = true;
-resultsBtn.disabled = true;
+// exercise2Btn.disabled = true;
+// exercise3Btn.disabled = true;
+// exercise4Btn.disabled = true;
+// exercise5Btn.disabled = true;
+// resultsBtn.disabled = true;
 // Point btns
 const pointBtn1 = document.querySelector(".point-btn1");
 const pointBtn2 = document.querySelector(".point-btn2");
