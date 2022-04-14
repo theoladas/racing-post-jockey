@@ -13,7 +13,7 @@ function exercise2() {
   const point3 = (document.querySelector(".point-3-span").innerHTML =
     "61-90 secs");
   const tip = (document.querySelector(".tip").innerHTML =
-    "TIP: Keep your elbow directly underneath your shoulder. Keep your hips, knees and ankles in line, lifting your hip as much as possible.");
+    "Keep your elbow directly underneath your shoulder. Keep your hips, knees and ankles in line, lifting your hip as much as possible.");
   exercise2Btn.disabled = true;
   pointBtnsEnabled();
 }
@@ -30,7 +30,7 @@ function exercise3() {
   const point3 = (document.querySelector(".point-3-span").innerHTML =
     "21-30 reps");
   const tip = (document.querySelector(".tip").innerHTML =
-    "TIP: Make sure your knee is kept in control. Drive upwards with your glutes.");
+    "Make sure your knee is kept in control. Drive upwards with your glutes.");
   exercise3Btn.disabled = true;
   pointBtnsEnabled();
 }
@@ -47,7 +47,7 @@ function exercise4() {
   const point3 = (document.querySelector(".point-3-span").innerHTML =
     "40 reps+");
   const tip = (document.querySelector(".tip").innerHTML =
-    "TIP: Keep your body up as one. Stay in a nice straight line, as if you were doing a plank.");
+    "Keep your body up as one. Stay in a nice straight line, as if you were doing a plank.");
   exercise4Btn.disabled = true;
   pointBtnsEnabled();
 }
@@ -64,7 +64,7 @@ function exercise5() {
   const point3 = (document.querySelector(".point-3-span").innerHTML =
     "61-90 secs");
   const tip = (document.querySelector(".tip").innerHTML =
-    "TIP: Squat against a wall with your legs at a 90 degree angle. Stay nice and low, focusing on quality over quantity.");
+    "Squat against a wall with your legs at a 90 degree angle. Stay nice and low, focusing on quality over quantity.");
   exercise5Btn.disabled = true;
   pointBtnsEnabled();
 }

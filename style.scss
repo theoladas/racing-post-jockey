@@ -10,6 +10,7 @@ body {
   color: #171717;
 }
 h1 {
+  font-family: "Roboto", sans-serif;
   font-size: 48px;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -81,11 +82,10 @@ header {
   }
 }
 
-// JOCKEY WRAPPER SECTION
+// EXERCISE WRAPPER SECTION
 .exercise-wrapper {
   position: relative;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding: 48px 0px;
   .functionality,
   .tip,
   .score {
@@ -116,6 +116,7 @@ header {
     font-weight: 300;
     line-height: 20px;
     text-align: center;
+    max-width: 700px;
     @media (max-width: 320px) {
       font-size: 14px;
     }
@@ -127,7 +128,7 @@ header {
       border: 1px solid #ea212e;
       border-radius: 4px;
       padding: 8px 30px;
-      margin-left: 0.5rem;
+      margin-left: 8px;
       background-color: #fff;
       color: #ea212e;
       cursor: pointer;
@@ -172,7 +173,9 @@ header {
     }
   }
   .score-card {
-    padding: 24px 0px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+
     span {
       color: #d11f25;
     }
