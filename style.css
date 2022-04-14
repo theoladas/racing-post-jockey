@@ -7,11 +7,6 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #171717;
-  color: #585858;
-  color: #d11f25;
-  color: #ea212e;
-  color: #cdcccb;
-  color: #02694c;
 }
 
 h1 {
@@ -105,7 +100,14 @@ header nav #logo {
 .exercise-wrapper .functionality,
 .exercise-wrapper .tip,
 .exercise-wrapper .score {
-  padding-top: 1rem;
+  padding-top: 16px;
+}
+@media (max-width: 520px) {
+  .exercise-wrapper .functionality,
+.exercise-wrapper .tip,
+.exercise-wrapper .score {
+    padding-top: 10px;
+  }
 }
 @media (max-width: 520px) {
   .exercise-wrapper .copy .exercise-title {
@@ -155,6 +157,11 @@ header nav #logo {
     padding: 5px 15px;
   }
 }
+@media (max-width: 370px) {
+  .exercise-wrapper .functionality .point-btn {
+    padding: 5px 10px;
+  }
+}
 .exercise-wrapper .functionality .point-btn h2 {
   color: black;
   margin-bottom: 5px;
@@ -165,12 +172,22 @@ header nav #logo {
     margin-bottom: 2px;
   }
 }
+@media (max-width: 370px) {
+  .exercise-wrapper .functionality .point-btn h2 {
+    font-size: 16px;
+  }
+}
 .exercise-wrapper .functionality .point-btn span {
   font-size: 16px;
 }
 @media (max-width: 520px) {
   .exercise-wrapper .functionality .point-btn span {
     font-size: 14px;
+  }
+}
+@media (max-width: 370px) {
+  .exercise-wrapper .functionality .point-btn span {
+    font-size: 12px;
   }
 }
 .exercise-wrapper .functionality .point-btn1:disabled,
