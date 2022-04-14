@@ -133,7 +133,6 @@ score = 0;
 // FUNCTIONS
 
 // All point btns are enabled
-
 function pointBtnsEnabled() {
   pointBtn1.disabled = false;
   pointBtn2.disabled = false;
@@ -172,6 +171,11 @@ function addThreePoints() {
       3)}`);
     pointBtnsDisabled();
   }
+}
+// Reset app functionality
+function resetApp() {
+  window.location.href = "index.html";
+  this.score = 0;
 }
 
 // EVENT LISTENERS
@@ -227,9 +231,3 @@ resultsBtn.addEventListener("click", () => {
 resetBtn.addEventListener("click", () => {
   resetApp();
 });
-
-//
-function resetApp() {
-  window.location.href = "index.html";
-  this.score = 0;
-}
