@@ -46,24 +46,7 @@ img {
   border-radius: 5px;
   border: none;
 }
-a,
-button {
-  font-weight: 700;
-  text-decoration: none;
-  border: 1px solid #ea212e;
-  border-radius: 4px;
-  padding: 8px 30px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  background-color: #fff;
-  color: #ea212e;
-  cursor: pointer;
-  transition: all 0.4s ease;
-  &:hover {
-    background-color: #ea212e;
-    color: #fff;
-  }
-}
+
 // HEADER
 header {
   min-height: 5vh;
@@ -87,6 +70,21 @@ header {
       object-fit: contain;
     }
     .contact-btn {
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid #ea212e;
+      border-radius: 4px;
+      padding: 8px 30px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      background-color: #fff;
+      color: #ea212e;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      &:hover {
+        background-color: #ea212e;
+        color: #fff;
+      }
       @media (max-width: 520px) {
         display: none;
       }
@@ -98,6 +96,9 @@ header {
 .exercise-wrapper {
   padding: 48px 0px;
   min-height: 80vh;
+  @media (max-width: 320px) {
+    padding: 32px 0px;
+  }
   .functionality,
   .tip,
   .score {
@@ -178,6 +179,9 @@ header {
           font-size: 12px;
         }
       }
+      &.point-btn1 {
+        margin-left: 0px;
+      }
     }
     .point-btn1:disabled,
     .point-btn2:disabled,
@@ -199,6 +203,14 @@ header {
       flex-direction: column;
     }
     .exercise-btn {
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      border: 1px solid #ea212e;
+      border-radius: 4px;
+      padding: 8px 30px;
+      margin-left: 10px;
+      margin-bottom: 10px;
       background-color: #ea212e;
       color: #fff;
       cursor: pointer;
@@ -230,34 +242,14 @@ header {
 // FOOTER
 footer {
   background-color: #cdcccb;
-  padding: 48px;
+  padding: 48px 0px;
+  @media (max-width: 320px) {
+    padding: 32px 0px;
+  }
   .footer-wrapper {
     img {
       width: 150px;
       object-fit: contain;
-    }
-    ul {
-      li {
-        list-style: none;
-        margin-right: 10px;
-        transition: all 0.4s ease;
-        @media (max-width: 410px) {
-          margin-right: 0px;
-        }
-        &:hover {
-          transform: translateY(-5px);
-        }
-        a {
-          border: none;
-          background-color: transparent;
-          img {
-            width: 35px;
-            @media (max-width: 410px) {
-              width: 25px;
-            }
-          }
-        }
-      }
     }
     .copy {
       p {
@@ -267,6 +259,19 @@ footer {
         @media (max-width: 768px) {
           line-height: 25px;
           margin-bottom: 5px;
+        }
+      }
+    }
+    .social {
+      padding: 20px 0px;
+      a {
+        transition: all 0.4s ease;
+        &:hover {
+          transform: translateY(-5px);
+        }
+        img {
+          width: 35px;
+          height: auto;
         }
       }
     }
